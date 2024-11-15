@@ -2,12 +2,9 @@
 
 #define PI 3.14159265358979323846
 
-#define h(i, j) h[(i) * (ny + 1) + (j)]
-#define u(i, j) u[(i) * (ny + 1) + (j)]
-#define v(i, j) v[(i) * (ny + 2) + (j)]
-
 #include <stdlib.h>
 #include <math.h>
+#include "common.hpp"
 
 void water_drop(int length, int width, int nx, int ny, double r, double max_height, double *h, double *u, double *v)
 {

@@ -105,8 +105,8 @@ int main(int argc, char **argv)
     if (rank == 0)
     {
         h = (double *)calloc((nx + 1) * (ny + 1), sizeof(double));
-        u = (double *)calloc((nx + 2) * ny, sizeof(double));
-        v = (double *)calloc(nx * (ny + 2), sizeof(double));
+        u = (double *)calloc((nx + 1) * ny, sizeof(double));
+        v = (double *)calloc(nx * (ny + 1), sizeof(double));
 
         if (strcmp(scenario, "water_drop") == 0)
         {
